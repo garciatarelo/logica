@@ -22,3 +22,5 @@ progenitor(patricia, jaime).
 %¿Es Ana tía de Isabel?
 %progenitor(X, ana), progenitor(X, Y), progenitor(Y, isabel).
 
+%LAS REGLAS DEVUELVEN TRUE O FALSE abuela(clara,ana)
+abuela(X, Y):-progenitor(Z, Y), progenitor(X, Z), mujer(X).
